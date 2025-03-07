@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "llm-pubmed-fetcher"
+version = "0.1.0"
+description = "Fetch research papers from PubMed and classify corporate affiliations using LLM."
+authors = ["Your Name <your_email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+openai = "^0.27.0"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
